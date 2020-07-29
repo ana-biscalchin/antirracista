@@ -1,10 +1,7 @@
 import React from 'react';
 
-const CadastroVideo = () => {
-    <div> Cadastro Vídeo</div>
-
-
-
+function CadastroVideo() {
+    return (<div> Cadastro Vídeo</div>)
 
 }
 
