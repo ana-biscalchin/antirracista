@@ -2,18 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route} from 'react-router-dom'
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Home from './pages/Home';
+import CadastroVideo from './pages/cadastro/video';
+
+
+
 
 ReactDOM.render(
     <BrowserRouter>
       <Switch>
-        <Route path="/" component={App} exact />
-        {/* <Route path="/Cadastro/Vídeo" component={CadastroVideo}  /> */}
+        <Route path="/" component={Home} exact />
+        <Route path="/Cadastro/Video" component={CadastroVideo}  />
         <Route component={() => (<div>Page Not Found</div>)} />
       </Switch>
     </BrowserRouter>,
   document.getElementById('root')
 );
-
-serviceWorker.unregister();
